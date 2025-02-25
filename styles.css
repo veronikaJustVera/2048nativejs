@@ -1,0 +1,96 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #faf8ef;
+}
+
+h1 {
+    font-size: 2em;
+    margin: 20px 0;
+}
+
+.grid-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 85px);
+    overflow-y: hidden;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: repeat(4, 100px);
+    gap: 10px;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    background-color: #cdc1b4;
+    border-radius: 5px;
+    font-size: 2em;
+    line-height: 100px;
+    text-align: center;
+    color: #776e65;
+}
+
+.number-2 {
+    background-color: #eee4da;
+}
+
+.number-4 {
+    background-color: #ede0c8;
+}
+
+.number-8 {
+    background-color: #f2b179;
+}
+
+.number-16 {
+    background-color: #f59563;
+}
+
+.number-32 {
+    background-color: #f67c5f;
+}
+
+.number-64 {
+    background-color: #f65e3b;
+}
+
+.number-128 {
+    background-color: #edcf72;
+}
+
+.number-256 {
+    background-color: #edcc61;
+}
+
+.number-512 {
+    background-color: #edc850;
+}
+
+.number-1024 {
+    background-color: #edc53f;
+}
+
+.number-2048 {
+    background-color: #edc22e;
+}
+
+@media (max-height:600px) or (max-width: 600px){
+    .cell {
+        width: 50px;
+        height: 50px;
+        font-size: 1.4em;
+        line-height: 50px;
+    }
+    .grid {
+        grid-template-columns: repeat(4, 50px);
+        grid-template-rows: repeat(4, 50px);
+    }
+    h1 {
+        font-size: 1.6em;
+    }
+}
