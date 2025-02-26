@@ -1,5 +1,20 @@
 {
     "name": "veronikajustvera/2048nativejs",
+    "description": "2024 native js. Test composer package creation.",
     "type": "library",
-    "description": "2024 native js. Test composer package creation"
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Veronika Demianenko",
+            "email": "veronikajustvera@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "YourNamespace\\": "src/"
+        }
+    },
+    "require": {
+        "php": ">=7.4"
+    }
 }
