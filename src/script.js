@@ -110,7 +110,7 @@ function handleInput(event) {
     }
     addRandomTile();
     if (!hasMovesLeft()) {
-        //todo
+        //todo 
         alert("No moves left! Game over.");
     }
 }
